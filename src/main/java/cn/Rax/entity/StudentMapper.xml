@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="cn.Rax.dao.StudentDAO">
+		<!-- resultType:返回类型(要写类的完整的名称) -->
+	<insert id="save" parameterType="cn.Rax.entity.Student">
+		INSERT INTO student VALUES(#{roomNumber},#{name},#{teacher},#{type},#{education},#{major},#{base},#{information},#{now},#{id},#{progress}) 
+	</insert>
+	<update id="update" parameterType="cn.Rax.entity.Student">
+		UPDATE student 
+		SET teacher=#{teacher},type=#{type},education=#{education}, major=#{major},base=#{base},information=#{information},now=#{now},id=#{id},progress=#{progress},name= #{name} 
+		 WHERE name= #{name}	
+	</update>
+	<delete id="delete" parameterType="String">
+		DELETE FROM student WHERE id =#{id}
+	</delete>
+	<select id="findById" parameterType="String" resultType="cn.Rax.entity.Student">
+	 	SELECT * FROM student WHERE id = #{id} AND roomNumber = #{roomNumber}
+	 </select>
+	
+	
+	
+	<select id="findAll" resultType="cn.Rax.entity.Student">
+		SELECT * FROM student
+	</select>
+	<select id="findByroomNumber" resultType="cn.Rax.entity.Student">
+	 	SELECT * FROM student WHERE roomNumber = #{roomNumber}
+	 </select>
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="cn.Rax.dao.EmployeeDAO">
+		<!-- resultType:返回类型(要写类的完整的名称) -->
+	<select id="findAll" resultType="cn.Rax.entity.Employee">
+		SELECT * FROM other_teacher
+	</select>
+	<select id="findByName" parameterType="String" resultType="cn.Rax.entity.Employee">
+	 	SELECT * FROM other_teacher WHERE username = #{ename}
+	 </select>
+	 <delete id="delete" parameterType="String">
+		DELETE FROM other_teacher WHERE id =#{id1}
+	</delete>
+	<update id="update" parameterType="cn.Rax.entity.Employee">
+		UPDATE other_teacher SET username=#{username},password=#{password},name=#{name},dep=#{dep},career=#{career} where id=#{id}
+	</update>
+	<select id="findById" parameterType="String" resultType="cn.Rax.entity.Employee">
+		SELECT * FROM other_teacher WHERE id = #{id}
+	</select>
+	<insert id="save" parameterType="cn.Rax.entity.Employee">
+		INSERT INTO other_teacher VALUES(#{id},#{username},#{password},#{name},#{dep},#{career}) 
+	</insert>
+</mapper>

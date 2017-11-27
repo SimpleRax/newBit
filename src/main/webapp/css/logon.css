@@ -1,0 +1,85 @@
+body{
+    margin:0;
+    padding:0;
+    background:url("../img/1.png")no-repeat;
+    width: 1920px;
+    height: 1020px;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 35px;
+}
+.title {
+    position:absolute;
+    margin-top:105px ;
+    margin-left: 750px;
+}
+.table{
+    width: 515px;
+    height: 515px;
+    background:url("../img/2.png");
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 240px;
+}
+#text1,#text2{
+    position:absolute;
+    width: 278px;
+    height:37px;
+    border:1px solid #bfbfbf;
+    border-radius:25px;
+    margin-left:120px;
+}
+#text1{
+    position: absolute;
+    margin-top: 220px;
+}
+#text2{
+    position: absolute;
+    margin-top: 280px;
+}
+#check{
+    position: absolute;
+    font-size: 16px;
+    margin-top:325px;
+    margin-left:300px;
+}
+#check>a{
+    text-decoration:none;
+    color:#373737;
+}
+#btn>input{
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 355px;
+    width: 278px;
+    font-size: 26px;
+    outline: none;
+    border:none;
+    border-radius:18px;
+    color:#f9f9f9;
+    background:linear-gradient(90deg,#9F2871,#643976);
+}
+#text1>img,#text2>.img1{
+    position: absolute;
+    margin-top:7px;
+    margin-left:10px;
+}
+
+#text1>input,#text2>input{
+    position: absolute;
+    margin-left:50px;
+    margin-top: 10px;
+    font-size: 16px;
+    vertical-align:bottom;
+    border:none;
+    outline: none;
+    background-color:#f9f9f9;
+}
+.img2{
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 12px;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="cn.Rax.dao.RoomDAO">
+		<!-- resultType:返回类型(要写类的完整的名称) -->
+	<insert id="saveRoom"  parameterType="cn.Rax.entity.Room">
+		INSERT INTO room  
+		VALUES(#{roomNumber},#{chanxian},#{ctime},#{seat},#{teachername})
+	</insert> 
+	 <update id="update" parameterType="cn.Rax.entity.Room">
+		UPDATE room 
+		SET  chanxian=#{chanxian},ctime=#{ctime},seat=#{seat},teachername=#{teachername} 
+		 WHERE roomNumber=#{roomNumber}		
+	</update>
+	<delete id="delete" parameterType="cn.Rax.entity.Room">
+		DELETE FROM room WHERE roomNumber =#{roomNumber}
+	</delete>
+	<select id="findById" parameterType="String" resultType="cn.Rax.entity.Room">
+	 	SELECT * FROM room WHERE  roomNumber= #{roomNumber}
+	 </select>
+	<select id="findAll" resultType="cn.Rax.entity.Room">
+		SELECT * FROM room
+	</select>
+</mapper>

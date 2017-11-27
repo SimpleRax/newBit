@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="cn.Rax.dao.AdmDAO">
+	 <select id="findByName" parameterType="String" resultType="cn.Rax.entity.Adm">
+	 	SELECT * FROM Adm_table WHERE username = #{username}
+	 </select>
+</mapper>

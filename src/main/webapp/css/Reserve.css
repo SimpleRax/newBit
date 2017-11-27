@@ -1,0 +1,163 @@
+body{
+    width: 1920px;
+    height: 1080px;
+    margin: 0;
+    padding: 0;
+    color:#f9f9f9;
+    background: #FAFDFF;
+}
+.navigation{
+    float: left;
+    width: 300px;
+    height: 1080px;
+    background:url("../img/leftbuttom.png");
+}
+.front{
+    position: relative;
+    width: 290px;
+    height: 138px;
+    background:url("../img/background.png");
+    margin-top:170px;
+}
+.front>img{
+    position:absolute;
+    margin-top:23px;
+    margin-left:20px;
+}
+.front>.typeface{
+    text-align: center;
+    position: absolute;
+    width: 80px;
+    height:80px;
+    margin-top: 30px;
+    margin-left:120px;
+}
+.front>a{
+    position:absolute;
+    bottom:10px;
+    right: 10px;
+}
+.subject{
+    margin:0;
+    position: relative;
+    font-size:22px;
+    text-align: center;
+}
+.subject>.head{
+    margin-top:39px;
+    margin-bottom: 50px;
+}
+.subject>.content{
+    position: relative;
+    margin-bottom: 35px;
+}
+.stern{
+    position: relative;
+    margin-bottom: 35px;
+    font-size:20px;
+}
+.stern>select{
+    border:none;
+    color:#f9f9f9;
+    width:30px;
+    appearance:none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background:url("../img/xltb.png")no-repeat 15px 5px;
+    margin-left:40px;
+}
+.stern>.up{
+    margin-left:20px;
+}
+.stern>.next{
+    margin-left:30px;
+}
+/*右侧内容*/
+.search-box{
+    position: absolute;
+    width: 860px;
+    height: 34px;
+    background:url("../img/ss.png");
+    left: 683px;
+    top:85px;
+
+}
+.search-box>input{
+    position: absolute;
+    height:25px;
+    width: 500px;
+    left: 20px;
+    top:5px;
+    font-size:18px;
+    border:none;
+    outline: none;
+    background:#FAFDFF;
+}
+.search-box>img{
+    height: 30px;
+    position:absolute;
+    right:50px;
+    top:2px;
+}
+.table{
+    width: 1591px;
+    height:800px;
+    position:absolute;
+    left:310px;
+    top:200px;
+}
+.table>.title{
+    position: relative;
+    width:1570px;
+    height:52px;
+    background:#163248;
+    left:10px;
+}
+.table>.title tr{
+    width: 1500px;
+    position: absolute;
+    top:10px;
+    left:50px;
+}
+.table>.title td{
+    text-align: center;
+    width: 180px;
+}
+.table>.content{
+    margin-left:3px;
+    position: relative;
+    height: 52px;
+    background:url("../img/listw.png");
+}
+.table>.content tr{
+    color:black;
+    width: 1500px;
+    position: absolute;
+    left:50px;
+    top:15px;
+    font-size:18px;
+}
+.table>.content td{
+    text-align: center;
+    width:185px;
+}
+
+.foot{
+    position: absolute;
+    left:1600px;
+    top: 1000px;
+    color:black;
+}
+.foot>a{
+    width:30px;
+    appearance:none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    margin-left:40px;
+}
+.foot>.up{
+    margin-left:20px;
+}
+.foot>.next{
+    margin-left:30px;
+}
